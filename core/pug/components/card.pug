@@ -1,0 +1,7 @@
+mixin card(title, modifier = '')
+  - const modifierClass = modifier ? `card--${modifier}` : ''
+  .card(class=modifierClass)
+    .card__header
+      h3= title
+    .card__body
+      block

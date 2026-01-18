@@ -1,0 +1,30 @@
+// Core SCSS Entry Point
+
+// 1. Design Tokens（自動生成）
+@import 'abstracts/tokens';
+
+// 2. Bootstrap変数上書き
+@import 'abstracts/bootstrap-override';
+
+// 3. Bootstrap（部分的）
+@import 'vendor/bootstrap';
+
+// 4. 独自の変数とmixin
+@import 'abstracts/variables';
+@import 'abstracts/mixins';
+
+// 5. Base styles
+@import 'base/reset';
+@import 'base/typography';
+
+// 6. Elements（単一要素レベル）
+@import 'elements/buttons';
+
+// 7. Components（複合コンポーネント）
+@import 'components/card';
+
+// 8. Layout
+@import 'layout/container';
+
+// 9. Utilities
+@import 'utilities/utilities';

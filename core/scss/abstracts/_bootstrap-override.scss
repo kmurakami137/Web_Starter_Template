@@ -1,0 +1,27 @@
+// Bootstrap変数の上書き
+// Bootstrapを読み込む前に定義する必要がある
+
+// Colors（design-tokensの値を使用）
+$primary: $color-primary;
+$secondary: $color-secondary;
+$success: $color-success;
+$danger: $color-danger;
+
+// Grid breakpoints
+$grid-breakpoints: (
+  xs: 0,
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1536px
+);
+
+// Container max-widths
+$container-max-widths: (
+  sm: 640px,
+  md: 768px,
+  lg: 1024px,
+  xl: 1280px,
+  xxl: 1536px
+);

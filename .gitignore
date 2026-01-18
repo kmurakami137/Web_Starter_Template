@@ -1,0 +1,139 @@
+# Dependencies
+node_modules/
+jspm_packages/
+bower_components/
+
+# Build output
+dist/
+.histoire/
+storybook-static/
+out/
+.next/
+.nuxt/
+.output/
+build/Release
+
+# Cache directories
+.cache/
+.parcel-cache/
+.vite/
+.eslintcache
+.stylelintcache
+.npm
+*.tsbuildinfo
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Environment variables
+.env
+.env.*
+!.env.example
+.env.local
+.env.*.local
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+debug-storybook.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# Testing & Coverage
+coverage/
+*.lcov
+.nyc_output
+lib-cov
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.vscode-test
+.history/
+
+# OS - macOS
+.DS_Store
+._*
+.Spotlight-V100
+.Trashes
+
+# OS - Windows
+Thumbs.db
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.stackdump
+*.lnk
+
+# Temporary files
+*.tmp
+*.temp
+
+# Package manager lock files
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.yarn-integrity
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/sdks
+!.yarn/versions
+
+# Optional files
+.node_repl_history
+*.tgz
+.lock-wscript
+.grunt
+.serverless/
+.fusebox/
+.dynamodb/
+.firebase/
+.tern-port
+
+# Framework specific
+.svelte-kit/
+.docusaurus/
+**/.vitepress/dist
+**/.vitepress/cache
+
+# Generated tokens (再生成可能なため除外)
+core/scss/abstracts/_tokens.scss
+
+# Design files (ソースファイルは別途管理推奨)
+*.psd
+*.ai
+*.sketch
+
+# Compiled binaries
+*.com
+*.class
+*.dll
+*.exe
+*.o
+*.so
+
+# Archive files (リリース用は別途管理)
+*.7z
+*.dmg
+*.gz
+*.iso
+*.jar
+*.rar
+*.tar
+*.zip

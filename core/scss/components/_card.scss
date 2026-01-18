@@ -1,0 +1,68 @@
+// Card Component (BEM記法)
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: $color-white;
+  border: 1px solid $color-gray-200;
+  border-radius: $border-radius-lg;
+  box-shadow: $shadow-sm;
+  overflow: hidden;
+  transition: box-shadow 0.2s ease;
+
+  &:hover {
+    box-shadow: $shadow-md;
+  }
+
+  // Elements
+  &__header {
+    padding: $spacing-lg;
+    border-bottom: 1px solid $color-gray-200;
+    background-color: $color-gray-50;
+
+    h3 {
+      margin: 0;
+      font-size: $font-size-xl;
+      color: $color-gray-900;
+    }
+  }
+
+  &__body {
+    padding: $spacing-lg;
+    flex: 1;
+
+    p {
+      margin-bottom: 0;
+      color: $color-gray-700;
+    }
+  }
+
+  &__footer {
+    padding: $spacing-lg;
+    border-top: 1px solid $color-gray-200;
+    background-color: $color-gray-50;
+  }
+
+  // Modifiers
+  &--featured {
+    border-color: $color-primary;
+    box-shadow: $shadow-lg;
+
+    .card__header {
+      background-color: $color-primary;
+      border-bottom-color: darken($color-primary, 10%);
+
+      h3 {
+        color: $color-white;
+      }
+    }
+  }
+
+  &--compact {
+    .card__header,
+    .card__body,
+    .card__footer {
+      padding: $spacing-md;
+    }
+  }
+}

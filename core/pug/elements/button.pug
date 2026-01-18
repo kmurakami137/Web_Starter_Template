@@ -1,0 +1,3 @@
+mixin button(text, variant = 'primary', size = '')
+  - const sizeClass = size ? `btn--${size}` : ''
+  button(class=`btn btn--${variant} ${sizeClass}`)= text

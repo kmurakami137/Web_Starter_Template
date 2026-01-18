@@ -1,0 +1,75 @@
+extends /core/pug/layouts/base.pug
+include /core/pug/elements/button.pug
+include /core/pug/components/card.pug
+
+block title
+  title Web Starter Template - Home
+
+block content
+  .container.mt-5
+    .row
+      .col-12
+        h1.text-center Web Starter Template
+
+        p.text-center.text-gray
+          | Vite + Pug + SCSS + Bootstrap のスターターテンプレート。index.pugの出力です。
+
+    .row.mt-4
+      .col-12.text-center
+        h2 Buttons
+
+        .d-flex.gap-3.justify-content-center.flex-wrap
+          +button('Primary Button', 'primary')
+          +button('Secondary Button', 'secondary')
+          +button('Outline Button', 'outline')
+
+        .d-flex.gap-3.justify-content-center.flex-wrap.mt-3
+          +button('Small', 'primary', 'small')
+          +button('Medium', 'primary')
+          +button('Large', 'primary', 'large')
+
+    .row.mt-5
+      .col-12
+        h2.text-center Cards
+
+    .row.mt-4
+      .col-md-4
+        +card('Default Card')
+          p これは通常のカードコンポーネントです。
+
+      .col-md-4
+        +card('Featured Card', 'featured')
+          p これは強調表示されたカードです。
+
+      .col-md-4
+        +card('Another Card')
+          p デザイントークンを使用したコンポーネントです。
+
+    .row.mt-5.mb-5
+      .col-12
+        h2.text-center Design Tokens
+
+        .row.mt-4
+          .col-md-3
+            .text-center
+              .rounded-circle.mx-auto(style=`width: 80px; height: 80px; background-color: ${tokens.colors.primary}`)
+              p.mt-2 Primary
+              code= tokens.colors.primary
+
+          .col-md-3
+            .text-center
+              .rounded-circle.mx-auto(style=`width: 80px; height: 80px; background-color: ${tokens.colors.secondary}`)
+              p.mt-2 Secondary
+              code= tokens.colors.secondary
+
+          .col-md-3
+            .text-center
+              .rounded-circle.mx-auto(style=`width: 80px; height: 80px; background-color: ${tokens.colors.success}`)
+              p.mt-2 Success
+              code= tokens.colors.success
+
+          .col-md-3
+            .text-center
+              .rounded-circle.mx-auto(style=`width: 80px; height: 80px; background-color: ${tokens.colors.danger}`)
+              p.mt-2 Danger
+              code= tokens.colors.danger

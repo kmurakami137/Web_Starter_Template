@@ -1,0 +1,8 @@
+{
+  "disallowAttributeConcatenation": true,
+  "disallowDuplicateAttributes": true,
+  "disallowMultipleLineBreaks": true,
+  "requireLowerCaseAttributes": true,
+  "requireLowerCaseTags": true,
+  "validateIndentation": 2
+}

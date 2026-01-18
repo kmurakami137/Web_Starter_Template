@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Web Starter Template</title>
+  <link rel="stylesheet" href="/core/scss/core.scss">
+</head>
+<body>
+  <div class="container mt-5">
+    <div class="row">
+      <div class="col-12">
+        <h1 class="text-center">Web Starter Template</h1>
+        <p class="text-center text-gray">Vite + Pug + SCSS + Bootstrap のスターターテンプレート</p>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-12 text-center">
+        <h2>Buttons</h2>
+        <div class="d-flex gap-3 justify-content-center flex-wrap">
+          <button class="btn btn--primary">Primary Button</button>
+          <button class="btn btn--secondary">Secondary Button</button>
+          <button class="btn btn--outline">Outline Button</button>
+        </div>
+        <div class="d-flex gap-3 justify-content-center flex-wrap mt-3">
+          <button class="btn btn--primary btn--small">Small</button>
+          <button class="btn btn--primary">Medium</button>
+          <button class="btn btn--primary btn--large">Large</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row mt-5">
+      <div class="col-12">
+        <h2 class="text-center">Cards</h2>
+      </div>
+    </div>
+
+    <div class="row mt-4">
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card__header">
+            <h3>Default Card</h3>
+          </div>
+          <div class="card__body">
+            <p>これは通常のカードコンポーネントです。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card card--featured">
+          <div class="card__header">
+            <h3>Featured Card</h3>
+          </div>
+          <div class="card__body">
+            <p>これは強調表示されたカードです。</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4">
+        <div class="card">
+          <div class="card__header">
+            <h3>Another Card</h3>
+          </div>
+          <div class="card__body">
+            <p>デザイントークンを使用したコンポーネントです。</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="/core/js/core.js"></script>
+</body>
+</html>
