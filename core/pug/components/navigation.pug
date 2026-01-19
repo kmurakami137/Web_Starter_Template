@@ -1,0 +1,15 @@
+mixin navigation(items = [], logoText = 'Logo', modifier = '')
+  - const modifierClass = modifier ? `navigation--${modifier}` : ''
+  nav(class=`navigation ${modifierClass}`)
+    .navigation__container
+      .navigation__logo
+        a.navigation__logo-link(href='/')= logoText
+
+      button.navigation__toggle(type='button' aria-label='Toggle navigation')
+        span.navigation__toggle-icon
+
+      .navigation__menu
+        ul.navigation__list
+          each item in items
+            li.navigation__item
+              a.navigation__link(href=item.url class=item.active ? 'navigation__link--active' : '')= item.label
